@@ -1,0 +1,100 @@
+:root {
+  
+    /* Color Palette  */
+    /* https://coolors.co/09080d-f4f3f6-fa8334-897c80-5bc0be */
+    --darkColor: #09080D;
+    --lightColor: #F4F3F6;
+    --mainColor: #FA8334;
+    --minorColor: #5bc0be;
+    --neutralColor: #897c80;
+
+    /* Fonts */
+    --sansFont: Arial, Helvetica, sans-serif;
+
+}
+
+* {
+    background-color: var(--lightColor);
+    color: var(--darkColor);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 44px;
+    font-family: var(--sansFont);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+/* Header */
+nav {
+    font-family: var(--sansFont);
+    margin: 28px 0 0px;
+    text-align: right;
+    font-size: 19px;
+}
+
+nav a {
+    margin: 0 7px;
+}
+
+nav a:link {
+    text-decoration: none;
+}
+
+/* Developer Bio */
+
+h1.intro {
+    font-size: 165px;
+    margin: 130px auto;
+}
+
+section.developerBio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img.developerBio, div.developerBio {
+    padding: 20px;
+    width: 1em;
+}
+
+img.developerBio {
+    flex: 1 1 100px;
+}
+
+div.developerBio {
+    flex: 1 1 100px;
+}
+
+/* Project Work */
+
+section.projectWork {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.project:nth-child(1) {
+    flex: 1 1 100%;
+}
+
+.project {
+    flex: 1 1 1;
+    height: 300px;
+    background-color: var(--mainColor);
+}
+
+/* Footer */
