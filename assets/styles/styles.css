@@ -1,6 +1,6 @@
 :root {
   
-    /* Color Palette  */
+    /* ---------- Color Palette ---------- */
     /* https://coolors.co/09080d-f4f3f6-fa8334-897c80-5bc0be */
     --darkColor: #09080D;
     --lightColor: #F4F3F6;
@@ -8,13 +8,13 @@
     --minorColor: #5bc0be;
     --neutralColor: #897c80;
 
-    /* Fonts */
+    /* ---------- Fonts ---------- */
     --sansFont: Arial, Helvetica, sans-serif;
 
 }
 
 * {
-    background-color: var(--lightColor);
+    
     color: var(--darkColor);
 }
 
@@ -23,10 +23,12 @@ html {
 }
 
 body {
-
+    background-color: var(--lightColor);
 }
 
 h1 {
+    
+    margin: 100px 0;
     text-align: center;
     font-weight: 700;
     font-size: 44px;
@@ -39,7 +41,7 @@ h1 {
     padding: 0 50px;
 }
 
-/* Header */
+/* ---------- Header ---------- */
 nav {
     font-family: var(--sansFont);
     margin: 28px 0 0px;
@@ -55,7 +57,7 @@ nav a:link {
     text-decoration: none;
 }
 
-/* Developer Bio */
+/* ---------- Developer Bio ---------- */
 
 h1.intro {
     font-size: 165px;
@@ -80,21 +82,28 @@ div.developerBio {
     flex: 1 1 100px;
 }
 
-/* Project Work */
+/* ---------- Project Work ---------- */
 
-section.projectWork {
+div.projectWork {
     display: flex;
     flex-wrap: wrap;
 }
 
-section.project:nth-child(1) {
-    flex: 1 1 100%;
-}
-
-.project {
-    flex: 1 1 1;
+div.project {
+    flex: 1 1 50%;
     height: 300px;
+    margin: 20px;
+    padding: 20px;
+
     background-color: var(--mainColor);
 }
 
-/* Footer */
+div.project:nth-child(1) {
+    flex: 1 1 100%;
+    background-color: var(--minorColor);
+}
+
+h2.project {
+    font-size: 20px;
+}
+/* ---------- Footer ---------- */
