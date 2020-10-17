@@ -69,17 +69,21 @@ section.developerBio {
     flex-wrap: wrap;
 }
 
-img.developerBio, div.developerBio {
+section.developerBio img, section.developerBio div {
     padding: 20px;
     width: 1em;
 }
 
-img.developerBio {
+section.developerBio img {
     flex: 1 1 100px;
 }
 
-div.developerBio {
+section.developerBio div {
     flex: 1 1 100px;
+}
+
+section.developerBio p {
+    font
 }
 
 /* ---------- Project Work ---------- */
@@ -106,4 +110,25 @@ div.project:nth-child(1) {
 h2.project {
     font-size: 20px;
 }
+
 /* ---------- Footer ---------- */
+
+section.contactInfo {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    padding-top: 30px;
+    background-color: var(--minorColor);
+}
+
+section.contactInfo p {
+    font-size: 24px;
+    /* width: 50%; */
+    text-align: right;
+}
+
+section.contactInfo div.icons {
+
+    /* width: 20px; */
+    
+}
