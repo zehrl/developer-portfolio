@@ -4,8 +4,8 @@
     /* https://coolors.co/09080d-f4f3f6-fa8334-897c80-5bc0be */
     --darkColor: #09080D;
     --lightColor: #F4F3F6;
-    --mainColor: #FA8334;
-    --minorColor: #5bc0be;
+    --mainColor: #ffbf00;
+    --minorColor: #0c7489;
     --neutralColor: #897c80;
 
     /* ---------- Fonts ---------- */
@@ -28,8 +28,8 @@ body {
 
 h1 {
     
-    margin: 100px 0;
-    text-align: center;
+    margin: 200px 0px 50px 0;
+    text-align: left;
     font-weight: 700;
     font-size: 44px;
     font-family: var(--sansFont);
@@ -62,6 +62,7 @@ nav a:link {
 h1.intro {
     font-size: 165px;
     margin: 130px auto;
+    text-align: center;
 }
 
 section.developerBio {
@@ -83,7 +84,8 @@ section.developerBio div {
 }
 
 section.developerBio p {
-    font
+    font-size: 16px;
+    line-height: 24px;
 }
 
 /* ---------- Project Work ---------- */
@@ -93,16 +95,17 @@ div.projectWork {
     flex-wrap: wrap;
 }
 
-div.project {
-    flex: 1 1 50%;
-    height: 300px;
+a.project {
+    flex: 1 0 41%;
+    /* height: 300px; */
+    /* width: 50%; */
     margin: 20px;
     padding: 20px;
-
     background-color: var(--mainColor);
+    border: solid 2px var(--darkColor);
 }
 
-div.project:nth-child(1) {
+a.project:nth-child(1) {
     flex: 1 1 100%;
     background-color: var(--minorColor);
 }
@@ -111,24 +114,72 @@ h2.project {
     font-size: 20px;
 }
 
+a.project img {
+    width: 300px;
+    height: 300px;
+}
+
 /* ---------- Footer ---------- */
+
+footer {
+    height: 100px;
+}
 
 section.contactInfo {
     display: flex;
-    justify-content: space-evenly;
-    height: 50px;
-    padding-top: 30px;
-    background-color: var(--minorColor);
+    justify-content: center;
+    /* padding-top: 30px; */
+    /* background-color: var(--minorColor); */
+    padding: 20px 0;
 }
 
 section.contactInfo p {
     font-size: 24px;
+    font-weight: 100;
     /* width: 50%; */
-    text-align: right;
+    /* text-align: center; */
+    display: inline;
+    font-family: var(--sansFont);
+    
 }
 
-section.contactInfo div.icons {
-
+section.contactInfo div.contactMe, section.contactInfo div.icons {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
     /* width: 20px; */
     
+}
+
+section.contactInfo div.contactMe {
+    border-right: 1px solid var(--darkColor);
+}
+
+div.icons div{
+    flex: 1 0 70px;
+    text-align: center;
+}
+
+/* ---------- Media Queries ---------- */
+
+@media screen and (max-width: 1035px) {
+    h1.intro {
+        font-size: 125px;
+    }
+}
+  
+@media screen and (max-width: 890px) {
+    h1.intro {
+        font-size: 80px;
+    }
+    section.contactInfo div.contactMe {
+        display: none;
+    }
+    div.icons {
+        flex: 1 0 100%;
+    }
+    section.developerBio img {
+        flex: 1 1 100%;
+    }
+
 }
