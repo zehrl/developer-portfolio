@@ -1,185 +1,52 @@
-:root {
-  
-    /* ---------- Color Palette ---------- */
-    /* https://coolors.co/09080d-f4f3f6-fa8334-897c80-5bc0be */
-    --darkColor: #09080D;
-    --lightColor: #F4F3F6;
-    --mainColor: #ffbf00;
-    --minorColor: #0c7489;
-    --neutralColor: #897c80;
+/* Greeting */
 
-    /* ---------- Fonts ---------- */
-    --sansFont: Arial, Helvetica, sans-serif;
-
-}
-
-* {
-    
-    color: var(--darkColor);
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: var(--lightColor);
-}
-
-h1 {
-    
-    margin: 200px 0px 50px 0;
-    text-align: left;
-    font-weight: 700;
-    font-size: 44px;
-    font-family: var(--sansFont);
-}
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 50px;
-}
-
-/* ---------- Header ---------- */
-nav {
-    font-family: var(--sansFont);
-    margin: 28px 0 0px;
-    text-align: right;
-    font-size: 19px;
-}
-
-nav a {
-    margin: 0 7px;
-}
-
-nav a:link {
-    text-decoration: none;
-}
-
-/* ---------- Developer Bio ---------- */
-
-h1.intro {
-    font-size: 165px;
-    margin: 130px auto;
-    text-align: center;
-}
-
-section.developerBio {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-section.developerBio img, section.developerBio div {
-    padding: 20px;
-    width: 1em;
-}
-
-section.developerBio img {
-    flex: 1 1 100px;
-}
-
-section.developerBio div {
-    flex: 1 1 100px;
-}
-
-section.developerBio p {
-    font-size: 16px;
-    line-height: 24px;
-}
-
-/* ---------- Project Work ---------- */
-
-div.projectWork {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-a.project {
-    flex: 1 0 41%;
-    /* height: 300px; */
-    /* width: 50%; */
-    margin: 20px;
-    padding: 20px;
-    background-color: var(--mainColor);
-    border: solid 2px var(--darkColor);
-}
-
-a.project:nth-child(1) {
-    flex: 1 1 100%;
-    background-color: var(--minorColor);
-}
-
-h2.project {
-    font-size: 20px;
-}
-
-a.project img {
-    width: 300px;
-    height: 300px;
-}
-
-/* ---------- Footer ---------- */
-
-footer {
+/* Picture of Me */
+#headshot {
     height: 100px;
+    border-radius: 50px;
+    display: block;
+    margin: auto;
 }
 
-section.contactInfo {
-    display: flex;
-    justify-content: center;
-    /* padding-top: 30px; */
-    /* background-color: var(--minorColor); */
-    padding: 20px 0;
+/* Section Titles */
+
+/* Project Cards */
+
+.project-card, .project-card:hover, .project-card:focus, .project-card:active, .repo-link, .repo-link:hover, .repo-link:focus, .repo-link:active {
+    text-decoration: none;
+    color: inherit;
 }
 
-section.contactInfo p {
-    font-size: 24px;
-    font-weight: 100;
-    /* width: 50%; */
-    /* text-align: center; */
+/* .project-card:hover {
+    cursor: pointer;
+    background-color: rgba(130, 101, 235, 0.1);
+} */
+
+/* .project-card {
+} */
+
+/* .project-card-container {
+} */
+
+.project-card-li {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: auto; /* Remove margins */
+    max-width: 700px;
+}
+
+.project-card-image {
+    width: 100px;
+    object-fit: cover;
+
+}
+
+.card-title {
     display: inline;
-    font-family: var(--sansFont);
-    
 }
 
-section.contactInfo div.contactMe, section.contactInfo div.icons {
-    display: flex;
-    align-items: center;
-    padding: 0 30px;
-    /* width: 20px; */
-    
+.card-link {
+    padding: 2px 5px;
 }
+/* Footer */
 
-section.contactInfo div.contactMe {
-    border-right: 1px solid var(--darkColor);
-}
-
-div.icons div{
-    flex: 1 0 70px;
-    text-align: center;
-}
-
-/* ---------- Media Queries ---------- */
-
-@media screen and (max-width: 1035px) {
-    h1.intro {
-        font-size: 125px;
-    }
-}
-  
-@media screen and (max-width: 890px) {
-    h1.intro {
-        font-size: 80px;
-    }
-    section.contactInfo div.contactMe {
-        display: none;
-    }
-    div.icons {
-        flex: 1 0 100%;
-    }
-    section.developerBio img {
-        flex: 1 1 100%;
-    }
-
-}
