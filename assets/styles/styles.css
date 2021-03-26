@@ -2,8 +2,8 @@
 
 /* Picture of Me */
 #headshot {
-    height: 100px;
-    border-radius: 50px;
+    height: 300px;
+    border-radius: 1000px;
     display: block;
     margin: auto;
 }
@@ -12,13 +12,16 @@
 
 /* Project Cards */
 
+.project-card {
+    
+}
+
 .project-card, .project-card:hover, .project-card:focus, .project-card:active, .repo-link, .repo-link:hover, .repo-link:focus, .repo-link:active {
     text-decoration: none;
     color: inherit;
 }
 
 /* .project-card:hover {
-    cursor: pointer;
     background-color: rgba(130, 101, 235, 0.1);
 } */
 
