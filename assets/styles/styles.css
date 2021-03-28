@@ -1,3 +1,12 @@
+/* General */
+.shadow {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+body {
+    background-color: #d3dbf0
+}
+
 /* Greeting */
 
 /* Picture of Me */
@@ -13,7 +22,7 @@
 /* Project Cards */
 
 .project-card {
-    
+    transition: background-color 1s;
 }
 
 .project-card, .project-card:hover, .project-card:focus, .project-card:active, .repo-link, .repo-link:hover, .repo-link:focus, .repo-link:active {
@@ -22,14 +31,9 @@
 }
 
 .project-card:hover {
-    background-color: rgba(130, 101, 235, 0.1);
+    background-color: rgba(255, 255, 255, .7);
+    transition: background-color .2s;
 }
-
-/* .project-card {
-} */
-
-/* .project-card-container {
-} */
 
 .project-card-li {
     list-style-type: none; /* Remove bullets */
@@ -50,6 +54,47 @@
 
 .card-link {
     padding: 2px 5px;
+    white-space: nowrap;
+    background-color: #54428E;
+    border: none;
 }
+
+.card-link:hover {
+    background-color: #9181C5;
+}
+
+.live-link {
+    border-left: rgba(0, 0, 0, .25) 1px solid;
+}
+
+
+
 /* Footer */
 
+
+/* Media Queries */
+
+@media screen and (max-width: 425px) {
+    .card-title {
+        font-size: 1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .card-subtitle {
+        font-size: .75rem;
+    }
+
+    .card-link {
+        font-size: .75rem;
+    }    
+
+    .project-card-image {
+        width: 0px;
+    }
+
+    #headshot {
+        height: 250px;
+    }
+  }
